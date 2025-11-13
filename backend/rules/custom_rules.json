@@ -1,0 +1,18 @@
+[
+  {
+    "eventName": "PutEventSelectors",
+    "match": {
+      "eventName": "PutEventSelectors"
+    },
+    "reason": "test",
+    "risk": "Medium"
+  },
+  {
+    "eventName": "GetTrailStatus",
+    "match": {
+      "eventName": "GetTrailStatus"
+    },
+    "risk": "Medium",
+    "reason": "monitoring"
+  }
+]

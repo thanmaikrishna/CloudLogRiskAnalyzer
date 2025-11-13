@@ -1,0 +1,17 @@
+[
+  {
+    "name": "ConsoleLogin Failure",
+    "risk": "High",
+    "match": {
+      "eventName": "ConsoleLogin",
+      "errorMessage": "Failed authentication"
+    }
+  },
+  {
+    "name": "IAM Policy Change",
+    "risk": "Medium",
+    "match": {
+      "eventName": "PutUserPolicy"
+    }
+  }
+]
