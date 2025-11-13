@@ -1,55 +1,41 @@
-# CloudLogRiskAnalyzer
-
-# cloud-log-risk-analyzer
-# Analyzes logs of cloud and catogorises the risks
-
 # ☁️ Personalized Cloud Log Risk Categorizer using AWS CloudTrail
 
-This project analyzes AWS CloudTrail logs and categorizes cloud events into **Low**, **Medium**, or **High** risk levels using a custom Python script. It's designed for students, researchers, and cloud security learners who want insights from their AWS logs without setting up complex infrastructure.
+A Python-based tool that analyzes AWS CloudTrail logs and categorizes cloud events into **Low**, **Medium**, or **High** risk levels using custom logic.  
+This project is designed for **students, researchers, and cloud security learners** who want actionable insights from AWS logs without needing complex infrastructure setups.
 
 ---
 
 ## 📌 Problem Statement
 
-Security events in AWS environments often go unnoticed due to the complexity and volume of log data. This tool helps **simplify cloud log analysis** by highlighting events that pose potential risks based on predefined categories.
+In cloud environments like AWS, thousands of log entries are generated daily through CloudTrail.  
+Due to the sheer volume and complexity, **critical security events often go unnoticed**.  
+
+This tool simplifies cloud log analysis by:
+- Parsing AWS CloudTrail logs automatically.
+- Identifying and classifying potential risks.
+- Providing better visibility into user activity and anomalies.
 
 ---
 
-## 🎯 Objective
+## 🎯 Objectives
 
-
-## 📁 Features
-
-
-
----
-
-## 🛠️ Prerequisites
-
-- AWS Account (for generating CloudTrail logs)
-- Python 3.7+
-- CloudTrail trail configured to send logs to an S3 bucket  
-(You can generate test logs using EC2 or IAM activity)
+- Automate log inspection and categorization to reduce manual analysis time.  
+- Enhance **cloud security visibility** by detecting high-risk or unusual operations.  
+- Enable **customizable risk rules** to adapt to different security policies.  
+- Present results in a **structured and readable format** for security reporting.
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## 🚀 Features
 
-This project leverages a combination of AWS services and Python libraries to build a functional and easy-to-understand CloudTrail log analyzer:
+✅ **Automated Log Analysis** – Parses CloudTrail JSON logs and classifies risks.  
+✅ **Customizable Rules** – Modify predefined security rules to suit your environment.  
+✅ **Multi-Risk Categorization** – Classifies logs as *Low*, *Medium*, or *High* risk.  
+✅ **Lightweight & Portable** – Requires only Python and CloudTrail log files.  
+✅ **Extensible Design** – Can integrate with AWS SDK (Boto3) or dashboards later.  
+✅ **Open Source & Educational** – Ideal for students exploring **Cloud Security & Log Analysis**.
 
-| Tool / Service       | Purpose                                                                 |
-|----------------------|-------------------------------------------------------------------------|
-| **AWS CloudTrail**   | Captures and records AWS account activity as logs                       |
-| **Amazon S3**        | Stores CloudTrail logs for processing                                   |
-| **AWS EC2**          | Used to simulate AWS actions (e.g., start/stop instance) for testing    |
-| **Python 3.x**       | Core programming language used to build the analyzer                    |
-| **Pandas**           | Parses and processes logs into structured formats like CSV              |
-| **Gzip**             | Decompresses `.json.gz` CloudTrail log files                            |
-| **JSON Module**      | Parses log data from CloudTrail JSON files                              |
-| **Boto3** *(optional)* | AWS SDK for Python – can automate log retrieval if extended            |
-| **VS Code / PyCharm**| Code editor used for development                                        |
-| **Git & GitHub**     | Version control and open-source project hosting     
+---
 
+## 🧱 System Architecture
 
-## 👨‍💻 Author
-Your Name – N Thanmai
